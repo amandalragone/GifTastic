@@ -33,7 +33,7 @@ $(document).ready(function() {
     $(document).on("click", ".searchTopic", function() {
 
         var topic = $(this).data("id");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?api_key=9VCJsnqi1AU2pxpJjc0IDYjl4enhvjWQ&q=" + topic + "&limit=10"
+        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=9VCJsnqi1AU2pxpJjc0IDYjl4enhvjWQ&q=" + topic + "&limit=10"
 
         function makeResultsDiv(obj) {
             
