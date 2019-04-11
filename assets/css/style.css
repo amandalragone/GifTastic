@@ -1,0 +1,54 @@
+body {
+    background-color: #20c997;
+}
+
+.container {
+    background-color: #e9ecef;
+    border: 2px solid #20c997;
+    padding: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: #20c997;
+}
+
+button {
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+#form, #results {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border: 2px solid #033C73;
+}
+
+form {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#gif-search, #form-button {
+    margin-top: 10px;
+}
+
+.h3 {
+    background-color: #033C73;
+    color: #f8f9fa;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.searchResult {
+    padding: 20px;
+}
+
+img {
+    padding-bottom: 5px;
+}
+
+.gifRating {
+    font-weight: bold;
+}

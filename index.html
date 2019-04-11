@@ -5,34 +5,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-C++cugH8+Uf86JbNOnQoBweHHAe/wVKN/mb0lTybu/NZ9sEYbd+BbbYtNpWYAsNP" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
         <title>GifTastic Search!</title>
     </head>
     <body>
 
-        <div class="container">
-            <div class="row">
-                <h1>GifTastic Search!</h1>
-            </div>
-
-            <div class="row" id="buttons-view"></div>
-
-            <div class="row" id="form">
-                <form>
-                    <div class="form-group">
-                        <label for="formSearch">Search for a new gif!</label>
-                        <input type="text" class="form-control" id="gif-search" aria-describedby="searchHelp" placeholder="Friends">
-                        <small id="searchHelp" class="form-text text-muted">Search for new gifs here. Once you enter your search, a new button will be created on the top of the page. Then, you just need to click the button to view the results!</small>
-                    </div>
-                    <input id="form-button" type="submit" value="Add a Gif Search button!">
-                </form>
-            </div>
-
-            <div class="row" id="results-view"></div>
             
-        </div>
+
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <h1>Giftastic Search!</h1>
+                </div>
+
+                <hr>
+
+                <div class="row" id="buttons-view"></div>
+
+                <div class="row" id="form">
+
+                        <span class="col-12 h3">Search for a new gif!</span>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="gif-search" aria-describedby="searchHelp" placeholder="Friends">
+                            <small id="searchHelp" class="form-text text-muted">Search for new gifs here. Once you enter your search, a new button will be created on the top of the page. Then, you just need to click the button to view the results!</small>
+                        </div>
+                        <input id="form-button" class="btn btn-warning" type="submit" value="Add a Gif Search button!">
+                    </form>
+                </div>
+
+                <div class="row" id="results">
+
+                    <span class="col-12 h3">These are your Gifs!</span>
+
+                    <div class="row justify-content-center" id="results-view"></div>
+                </div>
+
+                
+                
+            </div>
+
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

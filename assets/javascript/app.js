@@ -9,7 +9,7 @@ $(document).ready(function() {
         function createButtons(topicName) {
            
             return `
-                <button class="searchTopic" data-id="${topicName}">${topicName}</button>
+                <button class="searchTopic btn btn-info" data-id="${topicName}">${topicName}</button>
                 `
         
         };
@@ -38,9 +38,9 @@ $(document).ready(function() {
         function makeResultsDiv(obj) {
             
             return `
-                <div>
+                <div class="text-center searchResult">
                 <img src="${obj.images.fixed_width_still.url}" data-still="${obj.images.fixed_width_still.url}" data-animate="${obj.images.fixed_width.url}" data-state="still">
-                <p>Rating: ${obj.rating}</p>
+                <p class="gifRating">Rating: ${obj.rating}</p>
                 </div>
                 `
 
