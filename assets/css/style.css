@@ -1,17 +1,17 @@
 body {
-    background-color: #20c997;
+    background-color: #033C73;
 }
 
 .container {
     background-color: #e9ecef;
-    border: 2px solid #20c997;
+    border: 2px solid #033C73;
     padding: 40px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 h1 {
-    color: #20c997;
+    color: #033C73;
 }
 
 button {
@@ -19,13 +19,13 @@ button {
     margin-bottom: 15px;
 }
 
-#form, #results {
+#form, #results, #favoriteGifs {
     margin-bottom: 30px;
     padding-bottom: 15px;
     border: 2px solid #033C73;
 }
 
-form {
+form, #favorites {
     padding-right: 20px;
     padding-left: 20px;
 }
