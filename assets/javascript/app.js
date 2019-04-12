@@ -66,17 +66,45 @@ $(document).ready(function() {
 
             $(this).attr("src", $(this).attr("data-animate"));
             $(this).attr("data-state", "animate");
+            $(this).css({
+                "width": 400, "height": 400
+            })
 
         } else {
 
             $(this).attr("src", $(this).attr("data-still"));
             $(this).attr("data-state", "still");
+            $(this).css({
+                "width": 200, "height": 206
+            })
 
         };
 
     })
 
+    $(document).on("contextmenu", ".searchResult", function(){
+
+        var favoriteGif = confirm("Would you like to add this gif as a favorite?");
+            
+           if (favoriteGif) {
+
+               $(this).appendTo($("#favorites"));
+           
+            }
+
+        var myFavorites = $("#favorites").text();
+
+        localStorage.setItem('myFavorites', myFavorites);  
+
+   })
+
+   function obtainLocalStorage() {
+    $("#favorites").text(localStorage.getItem('myFavorites'));
+  
+  }
+
     //This function will display the initial buttons on the page as soon as the page loads.
     displayButtons();
+    obtainLocalStorage();
 
 })
